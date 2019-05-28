@@ -1,0 +1,47 @@
+base de dados: projeto_classificados
+
+tabela: usuarios
+id(int)
+nome(varchar)
+email(varchar)
+senha(varchar)
+telefone(varchar)
+
+tabela: categorias
+id(int)
+nome_categoria(varchar) 
+
+id:1 - nome_categoria:roupas
+id:2 - nome_categoria:relogios
+id:3 - nome_categoria:eletronicos
+id:4 - nome_categoria:eletrodomesticos
+id:5 - nome_categoria:ferramentas
+
+tabela: estado
+id(int)
+nome_estado(varchar)
+
+id:1 - nome_estado:ruim
+id:2 - nome_estado:bom
+id:3 - nome_estado:excelente
+
+
+tabela:anuncios
+id(int)
+id_usuario(int)
+id_categoria(int)
+titulo(varchar)
+descricao(text)
+valor(float)
+id_estado(int)
+foto_principal(varchar)
+
+
+
+tabela: imagens
+id(int)
+id_usuarios(int)
+id_anuncios(int)
+url(varchar)
+
+pasta arquivos para guardar as fotos
